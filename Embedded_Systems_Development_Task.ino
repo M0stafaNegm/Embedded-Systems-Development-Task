@@ -33,7 +33,7 @@ void Check_Button(int ledPin,int buttonPin){
   }
 }
 
-void Temp1(int analogInputPin){
+void CalcTemperature(int analogInputPin){
   
   float sensor_Temp = 0.0;  // For storing raw data from the Analog sensor
   float Temperature = 0.0; // For storing the converted temperature
@@ -48,7 +48,7 @@ void loop() {
   
 Check_Button(led_Pin,button_Pin);
 delay(1500); // Temperature is printed in the Serial Monitor every 3 seconds
-Temp1(analogInput_Pin);
+CalcTemperature(analogInput_Pin);
 delay(1500); // Temperature is printed in the Serial Monitor every 3 seconds
 
 }
