@@ -25,11 +25,18 @@ void Check_Button(int ledPin,int buttonPin){
   if (Button_State == HIGH) {
     // turn LED on:
     digitalWrite(ledPin, HIGH);
-    Serial.print("pressed");
+    Serial.print("Button state :");
+    Serial.print("Pressed");
+    Serial.print("LED state : ");
+    Serial.print("ON");
   } else {
     // turn LED off:
     digitalWrite(ledPin, LOW);
-    Serial.print("Not pressed");
+
+    Serial.print("Button state :");
+    Serial.print("Not Pressed");
+    Serial.print("LED state : ");
+    Serial.print("OFF");
   }
 }
 
